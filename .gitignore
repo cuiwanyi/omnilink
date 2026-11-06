@@ -1,0 +1,25 @@
+# 虚拟环境
+.venv/
+venv/
+
+# Python 缓存与构建产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# 环境变量与密钥（.env 含 LLM API Key，绝不入库）
+.env
+
+# 运行时数据
+*.db
+*.db-journal
+*.log
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
