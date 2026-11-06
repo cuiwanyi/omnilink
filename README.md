@@ -173,15 +173,3 @@ omnilink/
 
 Python 3.10 · fastmcp 4.1.6 · a2a-sdk 1.3.0 · LangGraph 1.2.20 · FastAPI ·
 Redis(fakeredis) · SQLite(aiosqlite) · OpenAI 兼容 LLM（可降级规则引擎）· rapidfuzz
-
-## 面试可聊的点
-
-- **为什么 MCP 和 A2A 要分层？** MCP 管 Agent↔工具（标准化调用），A2A 管 Agent↔Agent
-  （发现/委派/状态），职责正交；平台 Agent 作为 MCP 工具的"门面"，把限流重试等
-  平台个性留在平台侧自治，编排层只看到干净的 Task 语义。
-- **防超卖为什么需要三层而不是一把锁？** 锁解决并发，配额解决结构性超卖
-  （四平台库存加总），幂等解决重试语义——三者攻击面不同，缺一不可。
-- **SKU 对齐为什么用漏斗而不是直接 LLM？** 90% 请求映射表直查零成本；
-  LLM 只处理长尾，且置信度分级把"机器不确定"显式化交给人，避免错误映射污染主数据。
-- **LangGraph 的 Send 扇出**比手写 `asyncio.gather` 好在哪：子任务状态进统一
-  State + 归约器合并，每个节点的事件可插桩进 SSE 总线，图结构可直接可视化/回放。
