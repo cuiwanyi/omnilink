@@ -1,4 +1,23 @@
-# OmniLink 商链智联 — 跨平台电商 Agent 互操作平台
+<p align="center">
+  <img src="assets/og-image.png" alt="OmniLink Banner" width="100%" />
+</p>
+
+<div align="center">
+
+# OmniLink 商链智联
+
+**跨平台电商 Agent 互操作平台**
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1.2%2B-1C3659?logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
+[![MCP](https://img.shields.io/badge/MCP-4.1%2B-4B5563)](https://modelcontextprotocol.io/)
+[![A2A](https://img.shields.io/badge/A2A-1.3%2B-3B82F6)](https://google.github.io/A2A/)
+
+</div>
+
+---
 
 > 基于 **A2A 协议 + MCP 协议 + LangGraph** 的多智能体协作系统：商家说一句自然语言
 > （"帮我看下蓝牙耳机哪个平台卖得最便宜，Shopify 那边卖断货了，把淘宝的库存同步过去"），
